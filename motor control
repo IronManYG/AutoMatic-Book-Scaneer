@@ -14,12 +14,12 @@
 
 #include "AccelStepper.h"
 
-// pin 11 - GND
-// pin 12 - STEP
-// pin 13 - DIR
-
-int motorStepPin = 12;
-int motorDirPin = 13;
+// Pins : ENA-(ENA),//DIR-(DIR),//PUL-(PUL) AND GRUNDED (GUN).
+ 
+const int sensorPin = 0; //analog pin 0
+int motorStepPin = 5; //PUL+(+5v)
+int motorDirPin = 4; //DIR+(+5v)
+int enPin = 3; //ENA+(+5v)
 
 float SCAN_SPEED = 380;
 float MID_SPEED = 2000;
