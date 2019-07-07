@@ -58,7 +58,7 @@ void loop(){
   // forward
   stepper.setMaxSpeed(SCAN_SPEED);
   stepper.setAcceleration(ACCELERATION);
-  stepper.moveTo(12100);
+  stepper.moveTo(10830);
   int stage = 0;
   while (stepper.distanceToGo()) {
     if (stage == 0 && stepper.currentPosition() > 3000) {
